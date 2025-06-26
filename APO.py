@@ -283,6 +283,7 @@ class APO:
                         p.gatherForFood(self.F)
                         p.strengthenSearch(self.max_iter, t)
                         p.avoidPredators(self.F)
+                        p.fusion_acuatica()
                         feasible = p.is_feasible()
                     self.swarm[i].copy(p)
 
